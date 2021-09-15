@@ -1,0 +1,67 @@
+
+
+
+    {% extends "layout.html" %}
+
+    {% block content1 %}
+
+<form action="/msisdn_print" method="get">
+  <div>
+    <!-- <label for="say">Enter msisdn: </label>
+    <input name="msisdn" id="msisdn" value="79045094244"> -->
+      <div class="three fields">
+        <div class="ui input">
+            <input name="msisdn" id="msisdn" type="text" placeholder="Введите msisdn...">
+            <select class="ui fluid search dropdown" name="db">
+                <option value="">DB</option>
+                <option value="i459s7">i459s7</option>
+                <option value="i460s1">i460s1</option>
+                <option value="i460s10">i460s10</option>
+            </select>
+            <button class="ui button" >Поиск</button>
+        </div>
+      </div>
+  </div>
+</form>
+
+<table class="ui fixed table">
+  <thead>
+    <tr><th>Дата</th>
+    <th>Статус</th>
+    <th>Описание</th>
+  </tr></thead>
+  <tbody>
+    <tr>
+      <td>2021-09-08</td>
+      <td>Реализовано, идет тестирование</td>
+      <td>Реализована возможность выгрузить на свой компьютер текущую историческую таблице абонента в формате Excel.
+      Есть возможность добавить в отдельные вкладки информацию о тарифе, сценарии и пр.</td>
+    </tr>
+    <tr>
+      <td>2021-09-03</td>
+      <td><pre>
+Вылез Стасег, на заявках,
+порешайка их за баллы.
+Теперь за Респекты не пишу я,
+у меня и так их много.
+Эй е-баллы, я не слышу!
+Эй коллеги, руки выше!
+Стань адептом нашей веры,
+эй е-баллы! Эй коллеги!
+Это не Т2 директор запел
+Я к девяти успела встать
+Читаю Jira о вызове в сессии
+Надеюсь Родион меня простит
+Он просит моник купить, но </pre>
+Нет монет!</td>
+      <td>Заявки в приоритете</td>
+    </tr>
+    <tr>
+      <td>2021-09-01</td>
+      <td>Старт проекта</td>
+      <td>Исторические абонентские данные в едином окне.</td>
+    </tr>
+  </tbody>
+</table>
+
+     {% endblock %}

@@ -1,0 +1,1 @@
+select TRPL_ID trpl_id from subs_list_view where msisdn='{msisdn}'
